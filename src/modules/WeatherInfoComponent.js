@@ -141,7 +141,7 @@ function WeatherComponent(props) {
           textDecoration: "none",
           backgroundColor: "black",
           cursor:"pointer",
-         borderRadius:"8px"
+         borderRadius:"7px"
         }}
       >
         <a href="http://localhost:3000/"><b><i>Return</i></b></a>

@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  background-image: url("Background\ 5.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  font: Helvetica;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: Helvetica, sans-serif
+}

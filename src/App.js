@@ -4,8 +4,8 @@ import React, { useState } from "react";
 import WeatherComponent from "./modules/WeatherInfoComponent";
 import axios from "axios";
 
-//const API_KEY = "c20e17cb7d6f16b05a5ecdf5d087ddb9";
-const API_KEY= "0d87282849284d51a85c855f5269e79a";
+const API_KEY=process.env.REACT_APP_API_KEY;
+console.log(API_KEY);
 
 const Container = styled.div`
   display: flex;

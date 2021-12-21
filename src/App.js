@@ -5,7 +5,7 @@ import WeatherComponent from "./modules/WeatherInfoComponent";
 import axios from "axios";
 
 const API_KEY=process.env.REACT_APP_API_KEY;
-console.log(API_KEY);
+
 
 const Container = styled.div`
   display: flex;

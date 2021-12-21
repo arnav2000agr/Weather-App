@@ -11,7 +11,7 @@ const WeatherLogo = styled.img`
 
 const ChooseCityLabel = styled.span`
   color: black;
-  font-size: 25px;
+  font-size: 24.5px;
   font-weight: bold;
   margin: 10px auto;
   opacity:1.0;
@@ -24,6 +24,7 @@ const SearchBox = styled.span`
   font-size: 18px;
   margin: 10px auto;
   & input {
+    padding:7px;
     font-size: 14px;
     border: none;
     outline: none;
@@ -40,8 +41,8 @@ const SearchBox = styled.span`
     padding: 10px;
     font-size: 14px;
     color: white;
-    background-color:brown;
-    border: black solid 1px;
+    background-color:black;
+    filter:drop-shadow(30px );
     outline: none;
     font-weight: bold;
     cursor: pointer;
@@ -53,12 +54,12 @@ const CityComponent = (props) => {
     <>
       <WeatherLogo src={day} />
       <ChooseCityLabel><b>The Weather In Your City</b></ChooseCityLabel>
-      <SearchBox onClick={fetchWeather}>
+      <SearchBox >
         <input
           placeholder="Enter City"
           onChange={(e) => updateCity(e.target.value)}
         />
-        <button type={"submit"}>Submit</button>
+        <button type={"submit"}  onClick={fetchWeather}>Submit</button>
       </SearchBox>
     </>
   );

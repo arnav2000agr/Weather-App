@@ -1,1 +1,2 @@
-This project is designed by the use of axios in react.
+The site is active here : https://happy-keller-87849f.netlify.app
+This project uses axios to fetch data.

@@ -6,18 +6,15 @@ import axios from "axios";
 
 const API_KEY=process.env.REACT_APP_API_KEY;
 
-
 const Container = styled.div`
   display: flex;
+  font-size:25px;
   flex-direction: column;
   flex-wrap: wrap;
   margin: auto;
   align-items: center;
-  ${'' /* box-shadow: 0 3px 6px 0 #5555; */}
   border-radius: 4px;
   width: 400px;
-  ${'' /* height:480px; */}
-  background:golden;
   opacity:0.8;
   font-family: Monserrat;
 `;
@@ -28,6 +25,7 @@ function App() {
 
   const fetchWeather = async (e) => {
     e.preventDefault();
+    try{
     const response =
       await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}
    `);
@@ -35,6 +33,10 @@ function App() {
     console.log(response.data);
 
     updateWeather(response.data);
+    }catch(error){
+      alert("Sorry! Bad Request!");
+      
+    }
   };
 
   return (

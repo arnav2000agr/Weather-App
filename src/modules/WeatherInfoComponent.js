@@ -43,6 +43,7 @@ const WeatherInfoLabel = styled.span`
   display: flex;
   font-size: 20px;
   font-weight: bold;
+  color:white;
   margin: 20px 25px 10px;
   text-align: start;
   width: 90%;
@@ -136,15 +137,17 @@ function WeatherComponent(props) {
       </WeatherInfoContainer>
       <button
         style={{
-          padding: "5px",
+          padding: "12px",
           margin: "5px",
           textDecoration: "none",
+          fontSize:"16px",
           backgroundColor: "black",
+          filter:"drop-shadow(5px 5px 0.9 black)",
           cursor:"pointer",
-         borderRadius:"8px"
+         borderRadius:"12px"
         }}
       >
-        <a href="http://localhost:3000/"><b><i>Return</i></b></a>
+        <a href="https://happy-keller-87849f.netlify.app"><b><i>Return</i></b></a>
       </button>
     </>
   );
